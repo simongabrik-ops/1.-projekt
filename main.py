@@ -77,7 +77,7 @@ soucet_cisel = 0
 
 
 for slovo in list_zvoleneho_textu:
-    if slovo.istitle():
+    if slovo[0].isupper() and not slovo.isupper():
         pocet_slov_velka += 1
     elif slovo.islower():
         pocet_slov_mala += 1
